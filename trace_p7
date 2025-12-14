@@ -1,0 +1,278 @@
+1) Nord Ouest
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | .  | .  |
+ P2 | .  | .  |
+ P3 | .  | .  |
+ P4 | .  | .  |
+    +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 1
+
+[Algo] Exécution Nord-Ouest...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
+
+--- Itération 1 ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 18000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 | 100 |  .  |
+ P2 | 200 |  .  |
+ P3 | eps | 100 |
+ P4 |  .  | 200 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=-40, U3=0, U4=-5
+Colonnes : V1=50, V2=40
+
+[Amélioration] Candidat entrée : (0, 1) (Gain: -20)
+ -> Cycle détecté (longueur 4)
+ -> Theta (quantité déplacée) = 100
+ -> Sortie de la base : (0, 0)
+
+--- Itération 2 ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 16000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  .  | 100 |
+ P2 | 200 |  .  |
+ P3 | 100 | eps |
+ P4 |  .  | 200 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=-20, U3=20, U4=15
+Colonnes : V1=30, V2=20
+
+=== TABLE DES COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 20 | .  |
+ P2 | .  | 50 |
+ P3 | .  | .  |
+ P4 | 0  | .  |
+    +----+----+
+
+2) Ballas Hammer
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | .  | .  |
+ P2 | .  | .  |
+ P3 | .  | .  |
+ P4 | .  | .  |
+    +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 1
+
+[Algo] Exécution Nord-Ouest...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
+
+--- Itération 1 ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 18000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 | 100 |  .  |
+ P2 | 200 |  .  |
+ P3 | eps | 100 |
+ P4 |  .  | 200 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=-40, U3=0, U4=-5
+Colonnes : V1=50, V2=40
+
+[Amélioration] Candidat entrée : (0, 1) (Gain: -20)
+ -> Cycle détecté (longueur 4)
+ -> Theta (quantité déplacée) = 100
+ -> Sortie de la base : (0, 0)
+
+--- Itération 2 ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 16000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  .  | 100 |
+ P2 | 200 |  .  |
+ P3 | 100 | eps |
+ P4 |  .  | 200 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=-20, U3=20, U4=15
+Colonnes : V1=30, V2=20
+
+=== TABLE DES COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 20 | .  |
+ P2 | .  | 50 |
+ P3 | .  | .  |
+ P4 | 0  | .  |
+    +----+----+
+
+>>> OPTIMUM ATTEINT <<<
+Temps opti: 0.0034s
+
+==================================================
+   PROJET RECHERCHE OPÉRATIONNELLE
+==================================================
+1. Charger un fichier spécifique (Affichage Console)
+2. Générer TOUTES les traces (.txt)
+3. Étude de complexité (CSV + Graph)
+4. Test aléatoire rapide
+Q. Quitter
+>>> Choix : 1
+Nom du fichier (ex: proposition1.txt) : proposition7.txt
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | .  | .  |
+ P2 | .  | .  |
+ P3 | .  | .  |
+ P4 | .  | .  |
+    +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 2
+
+[Algo] Exécution Balas-Hammer...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
+
+--- Itération 1 ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 50  | 20  |  100  |
+ P2 | 10  | 50  |  200  |
+ P3 | 50  | 40  |  100  |
+ P4 | 45  | 35  |  200  |
+    +-----+-----+-------+
+ Com| 300 | 300 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 16000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  .  | 100 |
+ P2 | 200 |  .  |
+ P3 |  .  | 100 |
+ P4 | 100 | 100 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=-20, U3=20, U4=15
+Colonnes : V1=30, V2=20
+
+=== TABLE DES COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 20 | .  |
+ P2 | .  | 50 |
+ P3 | 0  | .  |
+ P4 | .  | .  |
+    +----+----+
