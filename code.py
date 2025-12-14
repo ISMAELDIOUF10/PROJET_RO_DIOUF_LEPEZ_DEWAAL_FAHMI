@@ -509,8 +509,12 @@ def generer_trace_fichier(pb_source, algo_type, nom_fichier_sortie):
 def etude_complexite():
     """Génère un CSV et des graphiques de temps d'exécution."""
     print("\n--- LANCEMENT BENCHMARK COMPLEXITÉ ---")
-    tailles = [10, 20, 40, 80]
-    nb_runs = 10
+    # On essaie de monter jusqu'à 400 ou 500 pour avoir une vraie courbe
+    tailles = [10,20,30,50,80,100] 
+    
+    # Le projet demande 100 répétitions (Source 203), mais c'est long.
+    
+    nb_runs = 50
     results = []
     
     for n in tailles:
