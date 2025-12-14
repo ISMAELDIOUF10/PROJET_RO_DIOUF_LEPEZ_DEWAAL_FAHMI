@@ -1,0 +1,101 @@
+1)Nord Ouest
+
+>>> Choisir le numéro du problème (1-12) ou 'q' pour quitter : 3
+
+--- Lecture de proposition3.txt ---
+
+=== MATRICE DES COÛTS ===
+--------------------------
+    | C1  |  C2  | Prov. |
+    +-----+------+-------+
+ P1 | 30  |  20  |  600  |
+ P2 | 10  |  50  |  500  |
+    +-----+------+-------+
+ Com| 100 | 1000 |
+--------------------------
+
+Algorithmes disponibles :
+  1. Nord-Ouest
+  2. Balas-Hammer
+>>> Votre choix (1 ou 2) : 2
+
+--- Proposition Initiale (Balas-Hammer) ---
+
+=== PROPOSITION DE TRANSPORT ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  0  | 600 |
+ P2 | 100 | 400 |
+    +-----+-----+
+Coût Initial : 33000.0
+
+--- Début de la méthode du Marche-Pied ---
+
+[ITÉRATION 1]
+* Test dégénérescence : Connexe
+
+=== POTENTIELS ===
+Lignes (U) : U1=0, U2=30
+Colonnes (V) : V1=-20, V2=20
+
+=== COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 50 | .  |
+ P2 | .  | .  |
+    +----+----+
+
+>>> Tous les coûts marginaux sont positifs ou nuls.
+
+2) Ballas-Hammer
+
+--- Lecture de proposition1.txt ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 30  | 20  |  100  |
+ P2 | 10  | 50  |  100  |
+    +-----+-----+-------+
+ Com| 100 | 100 |
+-------------------------
+
+Algorithmes disponibles :
+  1. Nord-Ouest
+  2. Balas-Hammer
+>>> Votre choix (1 ou 2) : 2
+
+--- Proposition Initiale (Balas-Hammer) ---
+
+=== PROPOSITION DE TRANSPORT ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  0  | 100 |
+ P2 | 100 |  0  |
+    +-----+-----+
+Coût Initial : 3000.0
+
+--- Début de la méthode du Marche-Pied ---
+
+[ITÉRATION 1]
+* Test dégénérescence : Non connexe (Dégénéré)
+(!) Le graphe n'est pas connexe. Impossible de calculer les potentiels correctement.
+
+****************************************
+ RÉSULTAT FINAL (Balas-Hammer)
+****************************************
+
+=== PROPOSITION OPTIMALE ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  0  | 100 |
+ P2 | 100 |  0  |
+    +-----+-----+
+Coût minimal trouvé : 3000.0
+
+Appuyez sur Entrée pour continuer vers un autre problème...
