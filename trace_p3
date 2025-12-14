@@ -1,0 +1,141 @@
+1) Nord Ouest
+=== MATRICE DES COÛTS ===
+--------------------------
+    | C1  |  C2  | Prov. |
+    +-----+------+-------+
+ P1 | 30  |  20  |  600  |
+ P2 | 10  |  50  |  500  |
+    +-----+------+-------+
+ Com| 100 | 1000 |
+--------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | .  | .  |
+ P2 | .  | .  |
+    +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 1
+
+[Algo] Exécution Nord-Ouest...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
+
+--- Itération 1 ---
+
+=== MATRICE DES COÛTS ===
+--------------------------
+    | C1  |  C2  | Prov. |
+    +-----+------+-------+
+ P1 | 30  |  20  |  600  |
+ P2 | 10  |  50  |  500  |
+    +-----+------+-------+
+ Com| 100 | 1000 |
+--------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 38000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 | 100 | 500 |
+ P2 |  .  | 500 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=30
+Colonnes : V1=30, V2=20
+
+[Amélioration] Candidat entrée : (1, 0) (Gain: -50)
+ -> Cycle détecté (longueur 4)
+ -> Theta (quantité déplacée) = 100
+ -> Sortie de la base : (0, 0)
+
+--- Itération 2 ---
+
+=== MATRICE DES COÛTS ===
+--------------------------
+    | C1  |  C2  | Prov. |
+    +-----+------+-------+
+ P1 | 30  |  20  |  600  |
+ P2 | 10  |  50  |  500  |
+    +-----+------+-------+
+ Com| 100 | 1000 |
+--------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 33000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  .  | 600 |
+ P2 | 100 | 400 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=30
+Colonnes : V1=-20, V2=20
+
+=== TABLE DES COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 50 | .  |
+ P2 | .  | .  |
+    +----+----+
+
+2) Ballas-Hammer 
+
+=== MATRICE DES COÛTS ===
+--------------------------
+    | C1  |  C2  | Prov. |
+    +-----+------+-------+
+ P1 | 30  |  20  |  600  |
+ P2 | 10  |  50  |  500  |
+    +-----+------+-------+
+ Com| 100 | 1000 |
+--------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | .  | .  |
+ P2 | .  | .  |
+    +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 2
+
+[Algo] Exécution Balas-Hammer...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
+
+--- Itération 1 ---
+
+=== MATRICE DES COÛTS ===
+--------------------------
+    | C1  |  C2  | Prov. |
+    +-----+------+-------+
+ P1 | 30  |  20  |  600  |
+ P2 | 10  |  50  |  500  |
+    +-----+------+-------+
+ Com| 100 | 1000 |
+--------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 33000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 |  .  | 600 |
+ P2 | 100 | 400 |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=30
+Colonnes : V1=-20, V2=20
+
+=== TABLE DES COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 50 | .  |
+ P2 | .  | .  |
+    +----+----+
