@@ -1,57 +1,28 @@
 1)Nord Ouest
-
->>> Choisir le numéro du problème (1-12) ou 'q' pour quitter : 3
-
---- Lecture de proposition3.txt ---
-
 === MATRICE DES COÛTS ===
---------------------------
-    | C1  |  C2  | Prov. |
-    +-----+------+-------+
- P1 | 30  |  20  |  600  |
- P2 | 10  |  50  |  500  |
-    +-----+------+-------+
- Com| 100 | 1000 |
---------------------------
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 30  | 20  |  100  |
+ P2 | 10  | 50  |  100  |
+    +-----+-----+-------+
+ Com| 100 | 100 |
+-------------------------
 
-Algorithmes disponibles :
-  1. Nord-Ouest
-  2. Balas-Hammer
->>> Votre choix (1 ou 2) : 2
-
---- Proposition Initiale (Balas-Hammer) ---
-
-=== PROPOSITION DE TRANSPORT ===
------------------
-    | C1  | C2  |
-    +-----+-----+
- P1 |  0  | 600 |
- P2 | 100 | 400 |
-    +-----+-----+
-Coût Initial : 33000.0
-
---- Début de la méthode du Marche-Pied ---
-
-[ITÉRATION 1]
-* Test dégénérescence : Connexe
-
-=== POTENTIELS ===
-Lignes (U) : U1=0, U2=30
-Colonnes (V) : V1=-20, V2=20
-
-=== COÛTS MARGINAUX ===
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
 ---------------
     | C1 | C2 |
     +----+----+
- P1 | 50 | .  |
+ P1 | .  | .  |
  P2 | .  | .  |
     +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 1
 
->>> Tous les coûts marginaux sont positifs ou nuls.
+[Algo] Exécution Nord-Ouest...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
 
-2) Ballas-Hammer
-
---- Lecture de proposition1.txt ---
+--- Itération 1 ---
 
 === MATRICE DES COÛTS ===
 -------------------------
@@ -63,39 +34,101 @@ Colonnes (V) : V1=-20, V2=20
  Com| 100 | 100 |
 -------------------------
 
-Algorithmes disponibles :
-  1. Nord-Ouest
-  2. Balas-Hammer
->>> Votre choix (1 ou 2) : 2
-
---- Proposition Initiale (Balas-Hammer) ---
-
-=== PROPOSITION DE TRANSPORT ===
+=== PROPOSITION DE TRANSPORT (Coût: 8000) ===
 -----------------
     | C1  | C2  |
     +-----+-----+
- P1 |  0  | 100 |
- P2 | 100 |  0  |
+ P1 | 100 |  .  |
+ P2 | eps | 100 |
     +-----+-----+
-Coût Initial : 3000.0
 
---- Début de la méthode du Marche-Pied ---
+--- Potentiels ---
+Lignes : U1=0, U2=-20
+Colonnes : V1=30, V2=70
 
-[ITÉRATION 1]
-* Test dégénérescence : Non connexe (Dégénéré)
-(!) Le graphe n'est pas connexe. Impossible de calculer les potentiels correctement.
+[Amélioration] Candidat entrée : (0, 1) (Gain: -50)
+ -> Cycle détecté (longueur 4)
+ -> Theta (quantité déplacée) = 100
+ -> Sortie de la base : (0, 0)
 
-****************************************
- RÉSULTAT FINAL (Balas-Hammer)
-****************************************
+--- Itération 2 ---
 
-=== PROPOSITION OPTIMALE ===
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 30  | 20  |  100  |
+ P2 | 10  | 50  |  100  |
+    +-----+-----+-------+
+ Com| 100 | 100 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 3000) ===
 -----------------
     | C1  | C2  |
     +-----+-----+
- P1 |  0  | 100 |
- P2 | 100 |  0  |
+ P1 |  .  | 100 |
+ P2 | 100 | eps |
     +-----+-----+
-Coût minimal trouvé : 3000.0
 
+--- Potentiels ---
+Lignes : U1=0, U2=30
+Colonnes : V1=-20, V2=20
+
+=== TABLE DES COÛTS MARGINAUX ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | 50 | .  |
+ P2 | .  | .  |
+    +----+----+
+
+2) Ballas-Hammer
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 30  | 20  |  100  |
+ P2 | 10  | 50  |  100  |
+    +-----+-----+-------+
+ Com| 100 | 100 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 0) ===
+---------------
+    | C1 | C2 |
+    +----+----+
+ P1 | .  | .  |
+ P2 | .  | .  |
+    +----+----+
+Algo (1:Nord-Ouest, 2:Balas-Hammer) : 2
+
+[Algo] Exécution Balas-Hammer...
+Temps init: 0.0002s
+Appuyez sur Entrée pour lancer l'optimisation...
+
+--- Itération 1 ---
+
+=== MATRICE DES COÛTS ===
+-------------------------
+    | C1  | C2  | Prov. |
+    +-----+-----+-------+
+ P1 | 30  | 20  |  100  |
+ P2 | 10  | 50  |  100  |
+    +-----+-----+-------+
+ Com| 100 | 100 |
+-------------------------
+
+=== PROPOSITION DE TRANSPORT (Coût: 3000) ===
+-----------------
+    | C1  | C2  |
+    +-----+-----+
+ P1 | eps | 100 |
+ P2 | 100 |  .  |
+    +-----+-----+
+
+--- Potentiels ---
+Lignes : U1=0, U2=-20
+Colonnes : V1=30, V2=20
 Appuyez sur Entrée pour continuer vers un autre problème...
